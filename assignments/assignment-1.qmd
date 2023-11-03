@@ -8,8 +8,96 @@ title: "Assignment 1"
 1 + 1
 ```
 
-My first assignment has two parts.
+My first assignment has 3 parts.
 
 ## (a)
 
+<https://www.youtube.com/watch?v=6QfhW9DeVvw&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=103>
+
+# Summary
+
+R Studio was used in this video to demonstrate how assignments and projects are developed and shared in collaborative environments. Additionally, it discusses sharing these projects in communal spaces. Preparing a project with RStudio involves creating a new R Project, which organizes your work into a dedicated directory. It allows for a structured workspace, including scripts, data, and outputs, enhancing collaboration and reproducibility. RStudio's project feature enables seamless integration with version control systems like Git, aiding in efficient project management and tracking changes. Utilizing RStudio projects streamlines workflow, facilitating better organization, management, and reproducibility of analyses and code.
+
 ## (b)
+
+# Differences of **Python** and **R**
+
+1.  **Syntax and Usage:** *Python is a general-purpose programming language known for its simplicity and readability, while R is specifically designed for statistical analysis and graphical representation. Python follows a more general syntax structure, whereas R has a specific syntax tailored for statistical operations.*
+
+2.  **Data Structures:** *Python's primary data structures like lists, dictionaries, and sets are versatile and widely applicable for various purposes beyond statistical analysis. R, on the other hand, offers specialized data structures designed for statistical operations, such as data frames, factors, and matrices.*
+
+3.  **Packages and Libraries:** *Both Python and R have a vast ecosystem of packages and libraries. However, their focus differs. Python offers a broad range of libraries for various purposes, including statistical analysis (such as NumPy and Pandas). R, being a language specifically developed for statistics, provides an extensive array of statistical packages (like dplyr, ggplot2) directly integrated into its core functionality.*
+
+## (c)
+
+``` R
+#install.packages("dslabs") 
+# if you install the packages once there is no need to instaal each time just use for first time is enough.
+
+library(dslabs)
+
+data("na_example")
+
+print(na_example) #print na_example
+```
+
+\[1\] 2 1 3 2 1 3 1 4 3 2 2 NA 2 2 1 4 NA 1 1 2 1 2 2 1
+\[25\] 2 5 NA 2 2 3 1 2 4 1 1 1 4 5 2 3 4 1 2 4 1 1 2 1
+\[49\] 5 NA NA NA 1 1 5 1 3 1 NA 4 4 7 3 2 NA NA 1 NA 4 1 2 2
+\[73\] 3 2 1 2 2 4 3 4 2 3 1 3 2 1 1 1 3 1 NA 3 1 2 2 1
+\[97\] 2 2 1 1 4 1 1 2 3 3 2 2 3 3 3 4 1 1 1 2 NA 4 3 4
+\[121\] 3 1 2 1 NA NA NA NA 1 5 1 2 1 3 5 3 2 2 NA NA NA NA 3 5
+\[145\] 3 1 1 4 2 4 3 3 NA 2 3 2 6 NA 1 1 2 2 1 3 1 1 5 NA
+\[169\] NA 2 4 NA 2 5 1 4 3 3 NA 4 3 1 4 1 1 3 1 1 NA NA 3 5
+\[193\] 2 2 2 3 1 2 2 3 2 1 NA 2 NA 1 NA NA 2 1 1 NA 3 NA 1 2
+\[217\] 2 1 3 2 2 1 1 2 3 1 1 1 4 3 4 2 2 1 4 1 NA 5 1 4
+\[241\] NA 3 NA NA 1 1 5 2 3 3 2 4 NA 3 2 5 NA 2 3 4 6 2 2 2
+\[265\] NA 2 NA 2 NA 3 3 2 2 4 3 1 4 2 NA 2 4 NA 6 2 3 1 NA 2
+\[289\] 2 NA 1 1 3 2 3 3 1 NA 1 4 2 1 1 3 2 1 2 3 1 NA 2 3
+\[313\] 3 2 1 2 3 5 5 1 2 3 3 1 NA NA 1 2 4 NA 2 1 1 1 3 2
+\[337\] 1 1 3 4 NA 1 2 1 1 3 3 NA 1 1 3 5 3 2 3 4 1 4 3 1
+\[361\] NA 2 1 2 2 1 2 2 6 1 2 4 5 NA 3 4 2 1 1 4 2 1 1 1
+\[385\] 1 2 1 4 4 1 3 NA 3 3 NA 2 NA 1 2 1 1 4 2 1 4 4 NA 1
+\[409\] 2 NA 3 2 2 2 1 4 3 6 1 2 3 1 3 2 2 2 1 1 3 2 1 1
+\[433\] 1 3 2 2 NA 4 4 4 1 1 NA 4 3 NA 1 3 1 3 2 4 2 2 2 3
+\[457\] 2 1 4 3 NA 1 4 3 1 3 2 NA 3 NA 1 3 1 4 1 1 1 2 4 3
+\[481\] 1 2 2 2 3 2 3 1 1 NA 3 2 1 1 2 NA 2 2 2 3 3 1 1 2
+\[505\] NA 1 2 1 1 3 3 1 3 1 1 1 1 1 2 5 1 1 2 2 1 1 NA 1
+\[529\] 4 1 2 4 1 3 2 NA 1 1 NA 2 1 1 4 2 3 3 1 5 3 1 1 2
+\[553\] NA 1 1 3 1 3 2 4 NA 2 3 2 1 2 1 1 1 2 2 3 1 5 2 NA
+\[577\] 2 NA 3 2 2 2 1 5 3 2 3 1 NA 3 1 2 2 2 1 2 2 4 NA 6
+\[601\] 1 2 NA 1 1 2 2 3 NA 3 2 3 3 4 2 NA 2 NA 4 NA 1 1 2 2
+\[625\] 3 1 1 1 3 NA 2 5 NA 7 1 NA 4 3 3 1 NA 1 1 1 1 3 2 4
+\[649\] 2 2 3 NA NA 1 4 3 2 2 2 3 2 4 2 2 4 NA NA NA 6 3 3 1
+\[673\] 4 4 2 1 NA 1 6 NA 3 3 2 1 1 6 NA 1 5 1 NA 2 6 2 NA 4
+\[697\] 1 3 1 2 NA 1 1 3 1 2 4 2 1 3 2 4 3 2 2 1 1 5 6 4
+\[721\] 2 2 2 2 4 NA 1 2 2 2 2 4 5 NA NA NA 4 3 3 3 2 4 2 4
+\[745\] NA NA NA NA 2 1 NA 2 4 3 2 NA 2 3 1 3 4 NA 1 2 1 2 NA 3
+\[769\] 1 2 1 2 1 2 1 2 2 2 2 1 1 3 3 1 3 4 3 NA NA 4 2 3
+\[793\] 2 1 3 2 4 2 2 3 1 2 4 3 3 4 NA 1 4 2 1 1 1 3 1 5
+\[817\] 2 2 4 2 NA 1 3 1 2 NA 1 2 1 2 1 NA 1 3 2 3 2 NA 2 1
+\[841\] 4 2 NA NA NA 2 4 2 NA NA 3 1 NA 5 5 2 2 2 NA 2 1 3 1 3
+\[865\] 2 4 2 4 NA 4 1 2 3 2 3 3 2 3 2 2 2 1 3 2 4 2 NA 3
+\[889\] 3 2 2 NA NA 3 2 1 2 4 1 1 1 1 4 3 2 NA 3 2 NA 1 NA 3
+\[913\] 2 1 1 1 2 NA 2 2 3 3 2 NA NA 4 5 2 2 2 1 2 3 1 3 3
+\[937\] 4 3 NA 1 1 1 NA 4 3 5 1 1 2 NA 2 2 2 2 5 2 2 3 1 2
+\[961\] 3 NA 1 2 NA NA 2 NA 3 1 1 2 5 3 5 1 1 4 NA 2 1 3 1 1
+\[985\] 2 4 3 3 3 NA 1 1 2 2 1 1 2 2 NA 2
+
+``` R
+na_check <-ifelse(is.na(na_example),1,0) #for sumation check NA and print as 1
+
+sum_na <- sum(na_check) 
+sum_na # total numbers of NA
+```
+
+\[1\] 145
+
+``` R
+without_na<-ifelse(is.na(na_example),0,na_example) #turn the na values to 0
+
+updated_num_na<-sum(ifelse(is.na(without_na),0,1))
+updated_num_na
+```
+
+\[1\] 1000
