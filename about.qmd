@@ -3,7 +3,7 @@ title: "About Me"
 sidebar: false 
 ---
 
-[CV](file:///C:/Users/lenovo/Desktop/Work/CV.pdf)
+[**CV**](file:///C:/Users/lenovo/Downloads/CV.html)
 
 # Education
 
