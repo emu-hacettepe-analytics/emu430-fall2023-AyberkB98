@@ -1,9 +1,9 @@
 ---
-title: "Welcome to My Analytics Lab"
+title: "AYBERK BAKILAN PAGE"
 sidebar: false 
 ---
 
-Hello! My name is Ayberk Bakılan.
+Hello! My name is **Ayberk Bakılan**.
 
 This is my personal webpage.
 
