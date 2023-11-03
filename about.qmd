@@ -3,6 +3,8 @@ title: "About Me"
 sidebar: false 
 ---
 
+[CV](file:///C:/Users/lenovo/Desktop/Work/CV.pdf)
+
 # Education
 
 -   B.S., Industrial Engineering, Hacettepe University, Turkey, 2018 - ongoing.
