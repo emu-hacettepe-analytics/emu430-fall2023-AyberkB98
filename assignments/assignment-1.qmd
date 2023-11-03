@@ -2,7 +2,7 @@
 title: "Assignment 1"
 ---
 
-# 
+# Assignment 1
 
 My first assignment has 3 parts.
 
@@ -26,16 +26,14 @@ R Studio was used in this video to demonstrate how assignments and projects are 
 
 ## (c)
 
-``` R
-#install.packages("dslabs") 
+`#install.packages("dslabs") 
 # if you install the packages once there is no need to instaal each time just use for first time is enough.
 
 library(dslabs)
 
 data("na_example")
 
-print(na_example) #print na_example
-```
+print(na_example) #print na_example`
 
 `[1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1
   [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1
@@ -80,20 +78,16 @@ print(na_example) #print na_example
  [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1
  [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2`
 
-``` R
-na_check <-ifelse(is.na(na_example),1,0) #for sumation check NA and print as 1
+`na_check <-ifelse(is.na(na_example),1,0) #for sumation check NA and print as 1
 
 sum_na <- sum(na_check) 
-sum_na # total numbers of NA
-```
+sum_na # total numbers of NA`
 
 \[1\] 145
 
-``` R
-without_na<-ifelse(is.na(na_example),0,na_example) #turn the na values to 0
+`without_na<-ifelse(is.na(na_example),0,na_example) #turn the na values to 0
 
 updated_num_na<-sum(ifelse(is.na(without_na),0,1))
-updated_num_na
-```
+updated_num_na`
 
 \[1\] 1000
